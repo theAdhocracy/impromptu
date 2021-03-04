@@ -29,10 +29,12 @@
 	},
 	"babel": {
 		"presets": [
-			"react-app",
-			{
-				"absoluteRuntime": false
-			}
+			[
+				"react-app",
+				{
+					"absoluteRuntime": false
+				}
+			]
 		]
 	},
 	"browserslist": {
