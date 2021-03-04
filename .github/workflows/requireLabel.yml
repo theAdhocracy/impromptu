@@ -1,0 +1,19 @@
+name: Require Labels to Merge
+
+# trigger when a pull request to the 'main' branch is opened
+on:
+  pull_request:
+    types: [opened, labeled, unlabeled, synchronize]
+    branches: [main]
+
+# checks whether the branch has at least one relevant label from the list
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🕵️‍♀️ Check for label
+        uses: mheap/github-action-required-labels@v1
+        with:
+          mode: minimum
+          count: 1
+          labels: "major, minor, patch, skip-release"
