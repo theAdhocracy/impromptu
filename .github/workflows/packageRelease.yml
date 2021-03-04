@@ -1,0 +1,46 @@
+name: Package Release
+
+# when does it trigger
+on:
+  push:
+    branches: [trunk]
+
+# what does it do
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    # skip any releases that exlicitly say so
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # Personal GitHub token with admin priveleges to enable branch protection
+          token: ${{ secrets.ADMIN_TOKEN }}
+
+      - name: ✨ Prepare repository
+        run: git fetch --unshallow --tags
+
+      - name: 🛠 Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@theadhocracy"
+
+      - name: 🗃 Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            node-modules-${{ hashFiles('package-lock.json') }}
+
+      - name: 🚀 Create Release
+        env:
+          # Uses NODE_AUTH with GITHUB_TOKEN for GitHub Package Registry integration
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm ci
+          npm run build
+          npm run release
