@@ -1,3 +1,15 @@
+# v0.2.0 (Fri Mar 05 2021)
+
+#### 🚀 Enhancement
+
+- 🚀  Automatically deploy Storybook to GitHub Pages [#4](https://github.com/theAdhocracy/impromptu/pull/4) ([@theAdhocracy](https://github.com/theAdhocracy))
+
+#### Authors: 1
+
+- theAdhocracy ([@theAdhocracy](https://github.com/theAdhocracy))
+
+---
+
 # v0.1.1 (Fri Mar 05 2021)
 
 ### Release Notes
