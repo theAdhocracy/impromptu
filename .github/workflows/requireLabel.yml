@@ -4,7 +4,7 @@ name: Require Labels to Merge
 on:
   pull_request:
     types: [opened, labeled, unlabeled, synchronize]
-    branches: [main]
+    branches: [trunk]
 
 # checks whether the branch has at least one relevant label from the list
 jobs:
