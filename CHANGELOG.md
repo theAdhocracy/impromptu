@@ -1,3 +1,23 @@
+# v0.1.1 (Fri Mar 05 2021)
+
+### Release Notes
+
+#### 🚀 New Action for label checks ([#3](https://github.com/theAdhocracy/impromptu/pull/3))
+
+Added new label check for PRs and restricted Chromatic from running unless UI files have been updated.
+
+---
+
+#### 🐛 Bug Fix
+
+- 🚀 New Action for label checks [#3](https://github.com/theAdhocracy/impromptu/pull/3) ([@theAdhocracy](https://github.com/theAdhocracy))
+
+#### Authors: 1
+
+- theAdhocracy ([@theAdhocracy](https://github.com/theAdhocracy))
+
+---
+
 # v0.1.0 (Thu Mar 04 2021)
 
 ### Release Notes
