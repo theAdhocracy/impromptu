@@ -1,7 +1,11 @@
 # Chromatic deployment and UI regression tests
 name: "Chromatic"
+
 # the event that will trigger the action
-on: push
+on:
+  push:
+    # only run when there have been changes to UI files (saves tokens)
+    paths: ["src/**"]
 
 # what the action will do
 jobs:
