@@ -1,4 +1,4 @@
-name: Require Labels to Merge
+name: 🏷 Require Labels to Merge
 
 # trigger when a pull request to the 'main' branch is opened
 on:

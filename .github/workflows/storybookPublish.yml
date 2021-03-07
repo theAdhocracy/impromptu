@@ -1,4 +1,4 @@
-name: Build and Deploy Storybook
+name: 📖 Build and Deploy Storybook
 
 # when should it trigger
 on:
