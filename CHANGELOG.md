@@ -1,3 +1,15 @@
+# v0.2.2 (Sun Mar 07 2021)
+
+#### 🐛 Bug Fix
+
+- 🚀 Build tool improvements from theAdhocracy/pipeline [#5](https://github.com/theAdhocracy/impromptu/pull/5) ([@theAdhocracy](https://github.com/theAdhocracy))
+
+#### Authors: 1
+
+- theAdhocracy ([@theAdhocracy](https://github.com/theAdhocracy))
+
+---
+
 # v0.2.1 (Fri Mar 05 2021)
 
 #### ⚠️ Pushed to `trunk`
