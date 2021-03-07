@@ -1,0 +1,20 @@
+# Run Jest unit tests
+name: ✅ Unit Tests
+
+# Run when merging with trunk
+on:
+  pull_request:
+    types: [opened, labeled, unlabeled, synchronize]
+    branches: [trunk]
+
+# What should happen
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+      - name: 🛠 Install Dependencies
+        run: npm install
+      - name: ✅ Run Tests
+        run: npm test

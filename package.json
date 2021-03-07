@@ -22,7 +22,8 @@
 		"build-storybook": "build-storybook -o docs-build -s public",
 		"build-storybook-docs": "build-storybook -s public --docs",
 		"chromatic": "npx chromatic --project-token CHROMATIC_TOKEN --exit-zero-on-changes",
-		"release": "auto shipit"
+		"release": "auto shipit",
+		"a11y": "build-storybook && axe-storybook"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -51,6 +52,7 @@
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.13.0",
+		"@chanzuckerberg/axe-storybook-testing": "^3.0.1",
 		"@storybook/addon-a11y": "^6.1.21",
 		"@storybook/addon-actions": "^6.1.21",
 		"@storybook/addon-essentials": "^6.1.21",

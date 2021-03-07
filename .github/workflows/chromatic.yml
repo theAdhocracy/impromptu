@@ -1,5 +1,5 @@
 # Chromatic deployment and UI regression tests
-name: "Chromatic"
+name: 🕵️‍♂️ Chromatic
 
 # the event that will trigger the action
 on:
