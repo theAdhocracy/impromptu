@@ -5,5 +5,5 @@ import * as icons from './shared/icons'
 
 export { styles, global, animation, icons }
 
-// export * from './components/Button/Button'
+export * from './components/Button/Button'
 export * from './components/Checkbox/Checkbox'
