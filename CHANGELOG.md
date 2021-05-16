@@ -1,3 +1,15 @@
+# v0.2.3 (Mon Apr 12 2021)
+
+#### 🐛 Bug Fix
+
+- ⬆️ Storybook v6.2 [#7](https://github.com/theAdhocracy/impromptu/pull/7) ([@theAdhocracy](https://github.com/theAdhocracy))
+
+#### Authors: 1
+
+- theAdhocracy ([@theAdhocracy](https://github.com/theAdhocracy))
+
+---
+
 # v0.2.2 (Sun Mar 07 2021)
 
 #### 🐛 Bug Fix
