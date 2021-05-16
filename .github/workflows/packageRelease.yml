@@ -20,15 +20,15 @@ jobs:
       - name: ✨ Prepare repository
         run: git fetch --unshallow --tags
 
-      - name: 🛠 Use Node.js 12.x
+      - name: 🛠 Use Node.js 14.x - ESM Support
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 14.x
           registry-url: "https://npm.pkg.github.com"
           scope: "@theadhocracy"
 
       - name: 🗃 Cache node modules
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: node_modules
           key: node-modules-${{ hashFiles('package-lock.json') }}
