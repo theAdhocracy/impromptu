@@ -5,7 +5,7 @@ name: 🕵️‍♂️ Chromatic
 on:
   push:
     # only run when there have been changes to UI files (saves tokens)
-    paths: ["src/**"]
+    paths: ['src/docs/**', 'src/components/**', 'src/shared/**']
 
 # what the action will do
 jobs:
