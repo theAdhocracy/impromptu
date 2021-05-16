@@ -1,3 +1,15 @@
+# v0.2.5 (Sun May 16 2021)
+
+#### 🐛 Bug Fix
+
+- 🐛 TypeScript config update [#10](https://github.com/theAdhocracy/impromptu/pull/10) ([@theAdhocracy](https://github.com/theAdhocracy))
+
+#### Authors: 1
+
+- theAdhocracy ([@theAdhocracy](https://github.com/theAdhocracy))
+
+---
+
 # v0.2.4 (Sun May 16 2021)
 
 #### 🐛 Bug Fix
