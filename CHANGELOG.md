@@ -1,3 +1,16 @@
+# v0.2.4 (Sun May 16 2021)
+
+#### 🐛 Bug Fix
+
+- 🐛 Lock file conflict [#9](https://github.com/theAdhocracy/impromptu/pull/9) ([@theAdhocracy](https://github.com/theAdhocracy))
+- 🔧 Typescript and various dependency bumps [#8](https://github.com/theAdhocracy/impromptu/pull/8) ([@theAdhocracy](https://github.com/theAdhocracy))
+
+#### Authors: 1
+
+- theAdhocracy ([@theAdhocracy](https://github.com/theAdhocracy))
+
+---
+
 # v0.2.3 (Mon Apr 12 2021)
 
 #### 🐛 Bug Fix
