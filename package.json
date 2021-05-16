@@ -18,8 +18,8 @@
     "test": "cross-env NODE_ICU_DATA=node_modules/full-icu jest --coverage --collectCoverageFrom=src/**/*.tsx --collectCoverageFrom=src/**/*.ts --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/**/*.stories.tsx --collectCoverageFrom=!src/**/*.d.ts ./src",
     "test:watch": "cross-env NODE_ICU_DATA=node_modules/full-icu jest --coverage --watch --collectCoverageFrom=src/**/*.tsx --collectCoverageFrom=src/**/*.ts --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/**/*.stories.tsx --collectCoverageFrom=!src/**/*.d.ts ./src",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -o docs-build -s public",
-    "build-storybook-docs": "build-storybook -s public --docs",
+    "build-storybook": "build-storybook -o docs-build",
+    "build-storybook-docs": "build-storybook -docs",
     "chromatic": "npx chromatic --project-token CHROMATIC_TOKEN --exit-zero-on-changes",
     "release": "auto shipit",
     "a11y": "build-storybook && axe-storybook"
