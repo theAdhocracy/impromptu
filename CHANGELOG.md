@@ -1,3 +1,15 @@
+# v0.2.7 (Mon May 17 2021)
+
+#### 🐛 Bug Fix
+
+- 🐛 TypeScript settings fix [#12](https://github.com/theAdhocracy/impromptu/pull/12) ([@theAdhocracy](https://github.com/theAdhocracy))
+
+#### Authors: 1
+
+- theAdhocracy ([@theAdhocracy](https://github.com/theAdhocracy))
+
+---
+
 # v0.2.6 (Mon May 17 2021)
 
 #### 🐛 Bug Fix
